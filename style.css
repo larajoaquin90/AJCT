@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
      /*Background design*/
 
@@ -31,13 +40,79 @@ body::before {
   pointer-events: none; /* Allow clicking through the pattern layer *** */ 
 }
 
+.log1{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    top: 30px;
+    left: 7.5px;
+}
+
+.circ2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.conne1{
+    position: absolute;
+    top: 160px;
+    left: 75px;
+
+
+    width: 3px;
+    height: 70px;
+    background-color: black;
+}
+
+.rec1{
+    width: 500px;
+    height: 350px;
+    border: solid black;
+    background-color: white;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+.title1{
+  font-size: 45px;
+  color: #4D3E5C;
+  text-align: center;
+  font-family: "Dela Gothic One", "Arial";
+  position: absolute;
+  top: 15px;
+}
+
+.int1{
+  font-size: 22px;
+  color: #4D3E5C;
+  text-align: center;
+  font-weight: 00;
+  font-family: "Work Sans", "Arial";
+  position: absolute;
+  bottom: 60px;
+}
+
 /* Button Idea */
 button {
-  position: relative;
+  position: absolute;
+  top: 500px;
+
+
   padding: 12px 35px;
   background: #2E7585;
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: "Dela Gothic One", "Arial";
   color: white;
   border: 3px solid #2E75858c;
   border-radius: 25px;
@@ -182,5 +257,14 @@ button:hover .star-6 {
   fill: #fffdef;
 }
 
+.conne2{
+    position: absolute;
+    top: 432px;
+    left: 125px;
 
+
+    width: 3px;
+    height: 70px;
+    background-color: black;
+}
 
