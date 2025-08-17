@@ -10,38 +10,35 @@
 
 /*BACKGROUND SETTING*/
 
-
 body{
-     /*Background design*/
-
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        45deg,
-        #56beccff,
-        #6a81d4
-    ); 
-    /* Gradient background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-    position: relative;
-    overflow: hidden;
-
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(
+    45deg,
+    #56beccff,
+    #6a81d4
+  ); 
+  position: relative;
 }
 
-body::before {
+body::before{
   content: "";
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    90deg,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  ),
+  linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
   pointer-events: none; /* Allow clicking through the pattern layer *** */ 
+  z-index: -1px;
 }
 
 
@@ -49,25 +46,25 @@ body::before {
 
 
 .log1{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
 
     position: absolute;
     top: 30px;
-    left: 820px;
+    left: 810px;
 }
 
 .circ2{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     border: 2px solid black;
 
     position: absolute;
     top: 23px;
-    left: 812px;
+    left: 802px;
 }
 
 .conne1{
@@ -76,7 +73,7 @@ body::before {
     left: 886px;
 
     width: 3px;
-    height: 450px;
+    height: 535px;
     background-color: black;
 }
 
@@ -179,26 +176,15 @@ body::before {
 
 /*BUTTON SETTING*/
 
-.conne2{
-  position: absolute;
-  top: 620px;
-  left: 886px;
-
-
-  width: 3px;
-  height: 90px;
-  background-color: black;
-}
-
 button {
   position: absolute;
   top: 710px;
-  left: 750px;
+  left: 730px;
 
 
-  padding: 8px 35px;
+  padding: 10px 40px;
   background: #2E7585;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   font-family: "Dela Gothic One", "Arial";
   color: white;
@@ -350,12 +336,12 @@ button:hover .star-6 {
 
 .conne3{
     position: absolute;
-    top: 760px;
+    top: 768px;
     left: 886px;
 
 
     width: 3px;
-    height: 120px;
+    height: 400px;
     background-color: black;
 }
 
