@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #56beccff, #6a81d4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                  linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.logo-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.log1 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  top: -1.4rem;
+}
+
+.circ2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: -7px;
+}
+
+.conne1 {
+  width: 3px;
+  height: 410px;
+  background-color: black;
+  top: 8.9rem;
+  position: absolute;
+}
+
+
+.content-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.rec1 {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  border: solid black;
+  background-color: white;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.title1 {
+  font-size: 45px;
+  color: #4D3E5C;
+  text-align: center;
+  font-family: "Dela Gothic One", "Arial";
+  margin-bottom: 20px;
+}
+
+.int1 {
+  font-size: 22px;
+  color: #4D3E5C;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Work Sans", "Arial";
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  border: solid black;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.img_ajct {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  background-color: #6a81d4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dela Gothic One", "Arial";
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+
+
+.button-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+
+
+button {
+  padding: 12px 40px;
+  background: #2E7585;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Dela Gothic One", "Arial";
+  color: white;
+  border: 3px solid #2E75858c;
+  border-radius: 25px;
+  box-shadow: 0 0 0 #2E75858c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  background: transparent;
+  color: #2E7585;
+  box-shadow: 0 0 25px #2E75858c;
+}
+
+button:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #fffdef;
+}
+
+@media (max-width: 768px) {
+  .title1 {
+    font-size: 35px;
+  }
+  
+  .int1 {
+    font-size: 18px;
+  }
+  
+  .card-back {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title1 {
+    font-size: 28px;
+  }
+  
+  .int1 {
+    font-size: 16px;
+  }
+  
+  .card {
+    height: 300px;
+  }
+  
+  .card-back {
+    font-size: 22px;
+  }
+  
+  button {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+  
+  .log1 {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circ2 {
+    width: 130px;
+    height: 130px;
+  }
+}
